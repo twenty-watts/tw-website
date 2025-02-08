@@ -1,7 +1,6 @@
 // app/about/page.tsx
 import Head from "next/head";
 
-
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-[#050A30] text-white font-inter relative">
