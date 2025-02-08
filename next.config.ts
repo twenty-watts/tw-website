@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   assetPrefix: isProd ? `/${repoName}/` : "",
   basePath: isProd ? `/${repoName}` : "",
   trailingSlash: true,
+  // Disable Next.js Image Optimization for static export
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

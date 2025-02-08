@@ -1,9 +1,9 @@
-import Image from "next/image";
+// app/page.tsx
 import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-900 via-gray-900 to-black text-white font-inter">
+    <div className="min-h-screen flex flex-col bg-[#050A30] text-white font-inter relative">
       <Head>
         <title>Twenty Watts – Deep Tech AI for Energy Innovation</title>
         <meta
@@ -18,56 +18,48 @@ export default function Home() {
         />
       </Head>
 
-      {/* Content container (narrower column) */}
-      <div className="max-w-xl mx-auto px-4 flex flex-col flex-1">
-        {/* Header */}
-        <header className="py-6 flex justify-center">
-          <Image
-            src="/twentywatts.gif"
-            alt="TW logo"
-            width={240}
-            height={50}
-            priority
-          />
-        </header>
-
-        {/* Main inspirational copy */}
-        <main className="flex flex-col flex-1 justify-center gap-6 text-center">
-          <p className="text-2xl leading-relaxed font-light">
-            At Twenty Watts, we harness the silent power of innovation.
-            Inspired by the intricate workings of the human mind, our AI transforms raw data into a future of endless possibilities.
-          </p>
-          <p className="text-xl leading-relaxed">
-            We decode the complexity of energy patterns through advanced machine learning algorithms,
-            converting every byte of information into actionable insights. Our technology not only predicts trends but redefines the landscape of energy management.
-          </p>
-          <p className="text-xl leading-relaxed">
-            Embracing a spirit of relentless curiosity, we challenge the status quo to unveil the unseen potential in every watt.
-            With precision and creativity at our core, we empower industries to make smarter, data-driven decisions.
-          </p>
-          <p className="text-xl leading-relaxed">
-            Dare to explore the frontier where intelligence meets energy and join us in shaping a sustainable, innovative future.
-          </p>
-        </main>
-
-        {/* Footer with horizontal layout */}
-        <footer className="py-6 flex justify-between items-center border-t border-gray-700">
-          <div>
-            <Image
-              src="/logo-banner.png"
-              alt="Logo Banner"
-              width={160}
-              height={33}
-            />
-          </div>
-          <div className="text-right text-sm">
-            <p>&copy; {new Date().getFullYear()} Twenty Watts. All rights reserved.</p>
-            <p>info@twentywatts.com</p>
-            <p>Via Rugabella, 10</p>
-            <p>20122 Milano (MI)</p>
-          </div>
-        </footer>
+      {/* Background Particle Effect */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-stars"></div> {/* Placeholder for animated particles */}
       </div>
+
+      {/* Main Content */}
+      <main className="flex flex-col flex-1 mt-32 w-full">
+        <div className="w-full max-w-5xl mx-auto px-8">
+          
+          {/* Hero Section (Right-Aligned) */}
+          <section className="text-right">
+            <div className="max-w-xl ml-auto pb-10">
+              <h1 className="text-6xl font-orbitron font-light">
+                The Power of Artificial Intelligence
+              </h1>
+              <p className="mt-6 text-lg text-gray-300">
+                Leveraging machine learning and artificial intelligence to create value in the energy industry:
+                from power load forecasting to renewable power generation prediction.
+              </p>
+            </div>
+          </section>
+
+          {/* In a Nutshell Section (Left-Aligned) */}
+          <section className="mt-12 text-left">
+            <div className="max-w-xl mr-auto">
+              <h2 className="text-3xl font-semibold">In a nutshell</h2>
+              <p className="mt-6 text-lg text-gray-300">
+                20 Watts is the average power of the human brain. At Twenty Watts, we aim to harness that power to devise
+                artificially intelligent solutions for the energy industry.
+              </p>
+              <p className="mt-6 text-lg text-gray-300">
+                Find out more about our products and technologies by{" "}
+                <a href="#" className="text-blue-400 hover:text-blue-300 underline">
+                  getting in touch
+                </a>{" "}
+                with us to schedule a product demo with one of our product consultants.
+              </p>
+            </div>
+          </section>
+
+        </div>
+      </main>
     </div>
   );
 }
