@@ -25,7 +25,7 @@ export default function Contacts() {
                   href="mailto:info@twentywatts.com"
                   className="text-blue-400 hover:text-blue-300 underline"
                 >
-                  hello@twentywatts.com
+                  info@twentywatts.com
                 </a>
                 , and we’ll get back to you as soon as possible.
               </p>

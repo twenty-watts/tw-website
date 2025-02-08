@@ -18,11 +18,6 @@ export default function Home() {
         />
       </Head>
 
-      {/* Background Particle Effect */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-stars"></div> {/* Placeholder for animated particles */}
-      </div>
-
       {/* Main Content */}
       <main className="flex flex-col flex-1 mt-32 w-full">
         <div className="w-full max-w-5xl mx-auto px-8">
@@ -49,11 +44,13 @@ export default function Home() {
                 artificially intelligent solutions for the energy industry.
               </p>
               <p className="mt-6 text-lg text-gray-300">
-                Find out more about our products and technologies by{" "}
-                <a href="#" className="text-blue-400 hover:text-blue-300 underline">
-                  getting in touch
-                </a>{" "}
-                with us to schedule a product demo with one of our product consultants.
+                <a
+                  href="mailto:info@twentywatts.com"
+                  className="text-blue-400 hover:text-blue-300 underline"
+                >
+                  Get in touch
+                </a>
+                {" "} to find out more about our technology and schedule a product demo.
               </p>
             </div>
           </section>

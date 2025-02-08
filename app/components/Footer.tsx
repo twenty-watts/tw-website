@@ -8,9 +8,14 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-6">
-            <Image src="/logo-banner.png" alt="Twenty Watts Logo" width={150} height={35} />
+            <Image
+              src="/logo-banner.png"
+              alt="Twenty Watts Logo"
+              width={150}
+              height={35}
+            />
             {/* Navigation links shown on larger screens */}
-            <div className="hidden md:flex gap-6 text-md text-gray-300 font-semibold">
+            <div className="hidden md:flex gap-6 text-md text-gray-300 font-semibold self-start">
               <Link href="/about" className="hover:text-white transition">
                 about
               </Link>
