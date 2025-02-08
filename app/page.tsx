@@ -35,10 +35,10 @@ export default function Home() {
         <main className="flex flex-col flex-1 justify-center gap-6 text-center">
           <p className="text-2xl leading-relaxed font-light">
             At Twenty Watts, we harness the silent power of innovation.
-            Inspired by the intricate workings of the human mind, our deep tech AI transforms raw data into a future of endless possibilities.
+            Inspired by the intricate workings of the human mind, our AI transforms raw data into a future of endless possibilities.
           </p>
           <p className="text-xl leading-relaxed">
-            We decode the complexity of energy consumption through advanced machine learning algorithms,
+            We decode the complexity of energy patterns through advanced machine learning algorithms,
             converting every byte of information into actionable insights. Our technology not only predicts trends but redefines the landscape of energy management.
           </p>
           <p className="text-xl leading-relaxed">
